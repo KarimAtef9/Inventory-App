@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item in the list of pets -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="92dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/new_inven"/>
+
+    <LinearLayout
+        android:layout_toLeftOf="@+id/price"
+        android:layout_toRightOf="@+id/image"
+        android:id="@+id/name_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D"
+            tools:text="Name el namany"/>
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD"
+            tools:text="summary el summarany we kany many zalabany"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_centerVertical="true"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D"
+        tools:text="180$"
+        android:layout_alignParentRight="true"
+        android:paddingRight="8dp"/>
+
+</RelativeLayout>

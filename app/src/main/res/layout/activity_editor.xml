@@ -1,0 +1,225 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".EditorActivity">
+
+
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/add_image"
+                android:padding="@dimen/activity_margin"
+                android:layout_centerHorizontal="true"
+                />
+
+            <!-- name category -->
+            <LinearLayout
+                android:layout_below="@+id/image_view"
+                android:id="@+id/container_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_margin"
+                android:paddingRight="@dimen/activity_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="Name"
+                    style="@style/CategoryStyle" />
+
+
+                <!-- Breed field -->
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/name_text"
+                    android:hint="Name"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+
+
+            </LinearLayout>
+
+            <!-- description category -->
+            <LinearLayout
+                android:layout_below="@+id/container_name"
+                android:id="@+id/container_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_margin"
+                android:paddingRight="@dimen/activity_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="Description"
+                    style="@style/CategoryStyle" />
+
+
+                <!-- Breed field -->
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/text_description"
+                    android:hint="Description"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+
+
+            </LinearLayout>
+
+            <!-- price category -->
+            <LinearLayout
+                android:layout_below="@+id/container_description"
+                android:id="@+id/container_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_margin"
+                android:paddingRight="@dimen/activity_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="Price"
+                    style="@style/CategoryStyle" />
+
+
+                <!-- Breed field -->
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/text_price"
+                    android:hint="Price"
+                    android:inputType="numberDecimal"
+                    style="@style/EditorFieldStyle" />
+
+
+            </LinearLayout>
+
+            <!-- quantity category -->
+            <LinearLayout
+                android:layout_below="@+id/container_price"
+                android:id="@+id/container_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_margin"
+                android:paddingRight="@dimen/activity_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="Quantity"
+                    style="@style/CategoryStyle" />
+
+
+                <!-- Breed field -->
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/text_quantity"
+                    android:hint="Quantity"
+                    android:inputType="number"
+                    style="@style/EditorFieldStyle" />
+
+
+            </LinearLayout>
+
+            <!-- supplier category -->
+            <LinearLayout
+                android:layout_below="@id/container_quantity"
+                android:id="@+id/container_supplier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_margin"
+                android:paddingRight="@dimen/activity_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="Supplier"
+                    style="@style/CategoryStyle" />
+
+
+                <!-- Breed field -->
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/text_supplier"
+                    android:hint="Supplier"
+                    android:inputType="textCapWords"
+                    style="@style/EditorFieldStyle" />
+
+
+            </LinearLayout>
+
+            <!-- supplier email category -->
+            <LinearLayout
+                android:layout_below="@id/container_supplier"
+                android:id="@+id/container_supplier_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_margin"
+                android:paddingRight="@dimen/activity_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    android:text="Supplier Email"
+                    style="@style/CategoryStyle" />
+
+
+                <!-- Breed field -->
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/text_supplier_email"
+                    android:hint="Supplier Email"
+                    android:inputType="textEmailAddress"
+                    style="@style/EditorFieldStyle" />
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/activity_margin"
+                android:src="@drawable/order" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
